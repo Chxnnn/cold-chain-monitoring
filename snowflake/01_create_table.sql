@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS COLDCHAIN_DB;
+USE DATABASE COLDCHAIN_DB;
+USE SCHEMA PUBLIC;
+CREATE OR REPLACE TABLE cold_chain_data (
+    timestamp TIMESTAMP,
+    container_id STRING,
+    temperature FLOAT,
+    location STRING
+);
+
+
+
+
+
