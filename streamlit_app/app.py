@@ -13,11 +13,15 @@ import os
 import pickle
 
 # Correct path to model file (relative to streamlit_app/)
-model_path = os.path.join("..", "model", "risk_model.pkl")
-feature_path = os.path.join("..", "model", "feature_columns.pkl")
+import os
+import pickle
+
+model_path = os.path.join("model", "risk_model.pkl")
+feature_path = os.path.join("model", "feature_columns.pkl")
 
 model = pickle.load(open(model_path, "rb"))
 feature_cols = pickle.load(open(feature_path, "rb"))
+
 
 
 # Define reusable function for prediction
